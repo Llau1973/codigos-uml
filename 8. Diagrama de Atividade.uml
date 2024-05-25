@@ -1,0 +1,14 @@
+@startuml
+start
+:Login;
+:Selecionar Projeto;
+:Adicionar Tarefa;
+if (Tarefa Adicionada?) then (Sim)
+    :Salvar Tarefa;
+else (Não)
+    :Mostrar Erro;
+endif
+:Logout;
+stop
+@enduml
+

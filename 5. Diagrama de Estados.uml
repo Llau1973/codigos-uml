@@ -1,0 +1,9 @@
+@startuml
+[*] --> Novo
+Novo --> EmProgresso : Iniciar
+EmProgresso --> Concluido : Finalizar
+EmProgresso --> Cancelado : Cancelar
+Concluido --> [*]
+Cancelado --> [*]
+@enduml
+

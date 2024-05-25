@@ -1,0 +1,13 @@
+@startuml
+actor "Gerente de Projeto" as Gerente
+actor "Desenvolvedor" as Dev
+
+usecase "Criar Projeto" as UC1
+usecase "Gerenciar Tarefas" as UC2
+usecase "Visualizar Relatórios" as UC3
+
+Gerente --> UC1
+Gerente --> UC3
+Dev --> UC2
+@enduml
+

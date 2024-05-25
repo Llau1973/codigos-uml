@@ -1,0 +1,10 @@
+@startuml
+actor Desenvolvedor
+participant "Sistema de Gestão de Projetos" as Sistema
+
+Desenvolvedor -> Sistema : Login
+Sistema -> Desenvolvedor : Valida Credenciais
+Desenvolvedor -> Sistema : Criar Projeto
+Sistema -> Desenvolvedor : Confirmação de Criação
+@enduml
+

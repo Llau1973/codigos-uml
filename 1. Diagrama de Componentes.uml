@@ -1,0 +1,8 @@
+@startuml
+package "Sistema de Gestão de Projetos" {
+    [Frontend] --> [Backend]
+    [Backend] --> [Banco de Dados]
+    [Backend] --> [Sistema de Autenticação]
+}
+@enduml
+
