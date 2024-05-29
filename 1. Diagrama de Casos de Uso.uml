@@ -1,0 +1,16 @@
+```plaintext
+@startuml
+actor "Gerente de Projeto" as GP
+actor "Membro da Equipe" as ME
+actor "Administrador" as AD
+
+rectangle ProjectTrack {
+  GP --> (Gerenciamento de Projetos)
+  GP --> (Geração de Relatórios)
+  ME --> (Gerenciamento de Tarefas)
+  ME --> (Comunicação e Colaboração)
+  AD --> (Alocação de Recursos)
+}
+
+@enduml
+```

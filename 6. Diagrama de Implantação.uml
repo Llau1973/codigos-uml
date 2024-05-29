@@ -1,0 +1,23 @@
+```plaintext
+@startuml
+node "Servidor Web" {
+  component "Interface do Usuário"
+  component "API Restful"
+}
+
+node "Servidor de Aplicação" {
+  component "Controlador de Tarefas"
+  component "Controlador de Projetos"
+}
+
+node "Servidor de Banco de Dados" {
+  database "Banco de Dados"
+}
+
+"Interface do Usuário" --> "API Restful"
+"API Restful" --> "Controlador de Tarefas"
+"API Restful" --> "Controlador de Projetos"
+"Controlador de Tarefas" --> "Banco de Dados"
+"Controlador de Projetos" --> "Banco de Dados"
+@enduml
+```

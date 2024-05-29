@@ -1,0 +1,15 @@
+```plaintext
+@startuml
+start
+:Iniciar Criação de Tarefa;
+:Inserir Detalhes da Tarefa;
+:Selecionar Responsável;
+if (Dados válidos?) then (sim)
+  :Salvar Tarefa no Banco de Dados;
+else (não)
+  :Exibir Mensagem de Erro;
+endif
+:Confirmar Criação de Tarefa;
+stop
+@enduml
+```

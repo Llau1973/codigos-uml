@@ -1,0 +1,49 @@
+```plaintext
+@startuml
+class Projeto {
+  +int id
+  +String nome
+  +String descricao
+  +Date dataInicio
+  +Date dataFim
+  +List<Tarefa> tarefas
+  +List<Recurso> recursos
+}
+
+class Tarefa {
+  +int id
+  +String nome
+  +String descricao
+  +Date dataInicio
+  +Date dataFim
+  +String status
+  +Recurso responsavel
+}
+
+class Recurso {
+  +int id
+  +String nome
+  +String tipo
+  +String disponibilidade
+}
+
+class Usuario {
+  +int id
+  +String nome
+  +String email
+  +String senha
+}
+
+class Relatorio {
+  +int id
+  +String tipo
+  +Date dataGeracao
+  +String conteudo
+}
+
+Projeto "1" *-- "1..*" Tarefa
+Projeto "1" *-- "1..*" Recurso
+Tarefa "1" *-- "1" Recurso
+Usuario "1" *-- "0..*" Tarefa
+@enduml
+```

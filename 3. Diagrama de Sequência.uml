@@ -1,0 +1,15 @@
+```plaintext
+@startuml
+actor Usuario
+participant "Interface do Usuário" as UI
+participant "Controlador de Tarefas" as CT
+participant "Banco de Dados" as DB
+
+Usuario -> UI: Solicita Gerenciamento de Tarefas
+UI -> CT: Envia Solicitação de Dados de Tarefas
+CT -> DB: Consulta Tarefas
+DB -> CT: Retorna Tarefas
+CT -> UI: Retorna Dados de Tarefas
+UI -> Usuario: Exibe Dados de Tarefas
+@enduml
+```

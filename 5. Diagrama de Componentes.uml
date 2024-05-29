@@ -1,0 +1,12 @@
+```plaintext
+@startuml
+package ProjectTrack {
+  [Interface do Usuário] --> [Controlador de Tarefas]
+  [Interface do Usuário] --> [Controlador de Projetos]
+  [Controlador de Tarefas] --> [Banco de Dados]
+  [Controlador de Projetos] --> [Banco de Dados]
+  [Relatório de Projetos] --> [Controlador de Projetos]
+  [Relatório de Tarefas] --> [Controlador de Tarefas]
+}
+@enduml
+```
